@@ -5,7 +5,7 @@ import { UserData } from '../../../models/userModels'
 // Define a service using a base URL and expected endpoints
 export const userApi = createApi({
   reducerPath: 'userApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'https://linuxappservice07152023.azurewebsites.net/api/' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://https://frontend23072023.z33.web.core.windows.net/user/api/' }),
   tagTypes: ['User'],
   endpoints: (builder) => ({
     getUsers: builder.query<UserData[], string>({query: () => `UserItems`, providesTags: ['User']}),
